@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dialogos.view.dialogosControlador">
+   <children>
+      <HBox layoutX="188.0" layoutY="56.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Button fx:id="no" cancelButton="true" layoutX="188.0" layoutY="56.0" mnemonicParsing="false" onAction="#No" text="No" />
+            <Button fx:id="si" defaultButton="true" layoutX="259.0" layoutY="68.0" mnemonicParsing="false" onAction="#Si" text="Si" />
+         </children>
+      </HBox>
+      <Button fx:id="aceptar" defaultButton="true" layoutX="279.0" layoutY="135.0" mnemonicParsing="false" onAction="#Aceptar" text="Aceptar" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label fx:id="mensaje" alignment="CENTER" layoutX="545.0" layoutY="108.0" text="Mensaje" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="error" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../../res/error.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="informacion" fitHeight="150.0" fitWidth="200.0" layoutX="108.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../../res/informacion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pregunta" fitHeight="150.0" fitWidth="200.0" layoutX="85.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../../res/pregunta.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

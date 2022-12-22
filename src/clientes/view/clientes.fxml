@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientes.view.clientesControlador">
+   <children>
+      <HBox layoutX="79.0" layoutY="91.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Button layoutX="79.0" layoutY="91.0" mnemonicParsing="false" onAction="#Agregar" text="Agregar" />
+            <Button layoutX="160.0" layoutY="91.0" mnemonicParsing="false" onAction="#Editar" text="Editar" />
+            <Button layoutX="235.0" layoutY="91.0" mnemonicParsing="false" onAction="#Eliminar" text="Eliminar" />
+         </children>
+      </HBox>
+      <HBox layoutX="92.0" layoutY="137.0" spacing="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <TextField fx:id="buscar" layoutX="92.0" layoutY="137.0" promptText="Clientes a buscar" />
+            <Button layoutX="264.0" layoutY="137.0" mnemonicParsing="false" onAction="#Buscar" text="Buscar" />
+         </children>
+      </HBox>
+      <Label layoutX="276.0" layoutY="33.0" text="Clientes" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabla" layoutX="180.0" layoutY="186.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0">
+        <columns>
+          <TableColumn fx:id="clave" prefWidth="75.0" text="Clave" visible="false" />
+          <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="economia" prefWidth="75.0" text="Economia" visible="false" />
+            <TableColumn fx:id="enfermedades" prefWidth="75.0" text="Enfermedad" />
+            <TableColumn fx:id="alergias" prefWidth="75.0" text="Alergias" />
+            <TableColumn fx:id="edad" prefWidth="75.0" text="Edad" visible="false" />
+            <TableColumn fx:id="sintomas" prefWidth="75.0" text="Sintomas" />
+            <TableColumn fx:id="embarazo" prefWidth="75.0" text="Embarazo" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
